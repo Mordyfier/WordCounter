@@ -63,6 +63,6 @@ mvn clean compile assembly:single
 
 ## Credits
 - The Beatles, as the lyrics used in the sample file come from their song
-"All You Need is Love"
+["All You Need is Love"](https://www.youtube.com/watch?v=_7xMfIp-irg)
 - For the purpose of visualisation, the [Kumo](https://github.com/kennycason/kumo)
 open source Maven library was used.
