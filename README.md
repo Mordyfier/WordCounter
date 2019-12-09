@@ -1,12 +1,12 @@
 # WordCounter
 CISC. 3130 - Data Structures Assignment
  
-##The Problem
+## The Problem
 This application was made to easily evaluate number of occurences
 of each word in a text file and produce visualisation of the dataset
 using open source libraries.
 
-##Solution
+## Solution
 The program (WordCounter.java) accepts the text file and places its contents
 into a HashMap in which each word (stripped of any punctuation and set to
 lower case) is grouped with its occurence count.
@@ -30,7 +30,7 @@ user a preview of the dataset without having to open the .txt file.
 The output file is then accepted by the visualisation class Cloud.java which
 produces a wordcloud (output.png) of the words based on their appearance frequency.
 
-##Usage
+## Usage
 The code can be downloaded and compiled using any IDE or command line
 (On Windows: press Windows Key + R for the Run window, type in 'cmd' to bring
 up the command prompt) typing in:
@@ -61,7 +61,7 @@ mvn clean compile assembly:single
 ```
 provided Maven is present.
 
-##Credits
+## Credits
 - The Beatles, as the lyrics used in the sample file come from their song
 "All You Need is Love"
 - For the purpose of visualisation, the [Kumo](https://github.com/kennycason/kumo)
