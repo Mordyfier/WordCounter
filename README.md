@@ -33,7 +33,7 @@ produces a wordcloud (output.png) of the words based on their appearance frequen
 ## Usage
 The code can be downloaded and compiled using any IDE or command line
 (On Windows: press Windows Key + R for the Run window, type in 'cmd' to bring
-up the command prompt) typing in:
+up the command prompt) typing in (while in root directory of the code):
 
 ```
 javac WordCounter.java
