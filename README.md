@@ -59,7 +59,7 @@ The code can also be compiled using
 ```
 mvn clean compile assembly:single
 ```
-provided Maven is present.
+, provided Maven is present.
 
 ## Credits
 - The Beatles, as the lyrics used in the sample file come from their song
