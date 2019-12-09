@@ -40,7 +40,7 @@ javac WordCounter.java
 javac Cloud.java
 ```
 
-The classes compiled thus may be ran without an argument (to used the sample
+The classes compiled thus may be ran without an argument (to use the sample
 text file provided):
 ```
 java WordCounter
