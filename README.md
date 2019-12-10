@@ -31,13 +31,14 @@ The output file is then accepted by the visualisation class Cloud.java which
 produces a wordcloud (output.png) of the words based on their appearance frequency.
 
 ## Usage
-The code can be downloaded and compiled using any IDE or command line
+While the WordCounter class does not utilize Maven libraries(and therefore can be compiled standalone), 
+the Kumo wordcloud visualisation library is used in Cloud.java, requiring a [Maven installation](https://maven.apache.org/install.html). 
+The code can be then compiled using command line
 (On Windows: press Windows Key + R for the Run window, type in 'cmd' to bring
 up the command prompt) typing in (while in root directory of the code):
 
 ```
-javac WordCounter.java
-javac Cloud.java
+mvn clean compile assembly:single
 ```
 
 The classes compiled thus may be ran without an argument (to use the sample
@@ -55,11 +56,7 @@ directory which will then be used by Cloud.class (ran as above, replacing
 "WordCounter" with "Cloud"). The Cloud class will produce a .png file with
 the dataset visualised in a wordcloud.
 
-The code can also be compiled using 
-```
-mvn clean compile assembly:single
-```
-, provided Maven is present.
+
 
 ## Credits
 - The Beatles, as the lyrics used in the sample file come from their song
