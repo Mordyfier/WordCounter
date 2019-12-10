@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Save as "HtmlEg3.html" -->
+<head>
+  <meta charset="utf-8">
+  <title>"All You Need Is Love" lyrics visualization</title>
+  <style>
+</style>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<h1>The Beatles - "All You Need Is Love"</h1>
+<a href="https://www.youtube.com/watch?v=_7xMfIp-irg">The Song</a> <a href="https://genius.com/The-beatles-all-you-need-is-love-lyrics">Lyrics</a>
+<div id='target' ></div>
+<script>
+        var target_target1 = document.getElementById('target');
+        var layout1 = {
+    title: '"All You Need Is Love" - Frequency of occurence per word',
+    height: 600,
+    width: 800,
+
+
+};
+
+var trace0 =
+{
+x: ['love','you','all','need','is','can','be','that','nothing','cant','theres','isnt','its','easy','to','but','do','how','learn','play','no','game','everybody','saved','save','youre','see','nowhere','known','shown','now','where','make','together','meant','in','made','one','say','done','sung','the','know','sing','time'],
+y: [41.0, 31.0, 20.0, 19.0, 19.0, 11.0, 7.0, 7.0, 7.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+orientation: 'v',
+xaxis: 'x',
+yaxis: 'y',
+type: 'bar',
+name: '',
+};
+
+        var data1 = [ trace0];
+Plotly.newPlot(target_target1, data1, layout1);
+
+var target_target2 = document.getElementById('target');
+        var layout2 = {
+    title: 'Number of words as a function of frequency',
+    height: 450,
+    width: 700,
+
+
+};
+
+</script>
+<p> This simple chart shows all the words and how many times they are repeated throughout the lyrics. I made this for a Data Structures class in Brooklyn College</p>
+<p> This chart was made in a following manner:</p>
+<ul>
+  <li>The code for finding the frequency of each word is a simple implementation of a HashMap in Java</li>
+  <li>The HashMap is then output to a .csv file</li>
+  <li>The .csv file is processed by another Java class which utilizes <a href="https://github.com/jtablesaw/tablesaw">Tablesaw</a> dataframe and vizualization library, which in turn uses <a href="https://github.com/plotly">Plot.ly</a> to produce graphs like this one </li>
+</ul>
+</body>
+</html>

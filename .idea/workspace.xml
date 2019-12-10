@@ -8,6 +8,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -20,9 +27,9 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="last.edited.regexp" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3497076" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -45,7 +52,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Cloud">
+  <component name="RunManager" selected="Application.Bars">
+    <configuration name="Bars" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bars" />
+      <module name="WordCounter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Cloud" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cloud" />
       <module name="WordCounter" />
@@ -63,11 +77,13 @@
     <list>
       <item itemvalue="Application.Cloud" />
       <item itemvalue="Application.WordCounter" />
+      <item itemvalue="Application.Bars" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Cloud" />
+        <item itemvalue="Application.Bars" />
         <item itemvalue="Application.WordCounter" />
+        <item itemvalue="Application.Cloud" />
       </list>
     </recent_temporary>
   </component>

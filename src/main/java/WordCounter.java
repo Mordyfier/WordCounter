@@ -51,5 +51,22 @@ public class WordCounter {
             out.newLine();
         }
         System.out.println("\nTotal words: " + hm.size());
+
+        String eol = System.getProperty("line.separator");
+
+        try (Writer writer = new FileWriter("dataSet.csv")) {
+            writer.append("Word")
+                    .append(',')
+                    .append("Count")
+                    .append(eol);
+            for (String s : hm.keySet()) {
+                writer.append(s)
+                        .append(',')
+                        .append(hm.get(s).toString())
+                        .append(eol);
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace(System.err);
+        }
     }
 }

@@ -19,18 +19,18 @@ import java.util.List;
 public class Cloud {
     public static void main (String [] args) throws IOException {
         final FrequencyAnalyzer frequencyAnalyzer = new FrequencyAnalyzer();
-        frequencyAnalyzer.setWordFrequenciesToReturn(1000);
+        frequencyAnalyzer.setWordFrequenciesToReturn(50);
         frequencyAnalyzer.setMinWordLength(3);
 
         final List<WordFrequency> wordFrequencies = frequencyAnalyzer.load("dataSet.txt");
-        final Dimension dimension = new Dimension(700, 700);
+        final Dimension dimension = new Dimension(500, 500);
         final WordCloud wordCloud = new WordCloud(dimension, CollisionMode.PIXEL_PERFECT);
-        wordCloud.setPadding(1);
+        wordCloud.setPadding(5);
         wordCloud.setBackground(new RectangleBackground(dimension));
         wordCloud.setKumoFont(new KumoFont("Impact", FontWeight.PLAIN));
         wordCloud.setAngleGenerator(new AngleGenerator(-60, 60, 5));
         wordCloud.setColorPalette(new ColorPalette(new Color(0x4055F1), new Color(0x408DF1), new Color(0x40AAF1), new Color(0x40C5F1), new Color(0x40D3F1), new Color(0x000000)));
-        wordCloud.setFontScalar(new LinearFontScalar(1, 25));
+        wordCloud.setFontScalar(new LinearFontScalar(1, 40));
         wordCloud.build(wordFrequencies);
         wordCloud.writeToFile("output.png");
     }
