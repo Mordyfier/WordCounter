@@ -4,48 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>"All You Need Is Love" lyrics visualization</title>
-  <style>
-</style>
+  <style></style>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
 <h1>The Beatles - "All You Need Is Love"</h1>
 <a href="https://www.youtube.com/watch?v=_7xMfIp-irg">The Song</a> <a href="https://genius.com/The-beatles-all-you-need-is-love-lyrics">Lyrics</a>
 <div id='target' ></div>
-<script>
-        var target_target1 = document.getElementById('target');
-        var layout1 = {
-    title: '"All You Need Is Love" - Frequency of occurence per word',
-    height: 600,
-    width: 800,
-
-
-};
-
-var trace0 =
-{
-x: ['love','you','all','need','is','can','be','that','nothing','cant','theres','isnt','its','easy','to','but','do','how','learn','play','no','game','everybody','saved','save','youre','see','nowhere','known','shown','now','where','make','together','meant','in','made','one','say','done','sung','the','know','sing','time'],
-y: [41.0, 31.0, 20.0, 19.0, 19.0, 11.0, 7.0, 7.0, 7.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
-orientation: 'v',
-xaxis: 'x',
-yaxis: 'y',
-type: 'bar',
-name: '',
-};
-
-        var data1 = [ trace0];
-Plotly.newPlot(target_target1, data1, layout1);
-
-var target_target2 = document.getElementById('target');
-        var layout2 = {
-    title: 'Number of words as a function of frequency',
-    height: 450,
-    width: 700,
-
-
-};
-
-</script>
+<script type = "text/javascript" src = "script.js" ></script>
 <p> This simple chart shows all the words and how many times they are repeated throughout the lyrics. I made this for a Data Structures class in Brooklyn College</p>
 <p> This chart was produced in the following manner:</p>
 <ul>
