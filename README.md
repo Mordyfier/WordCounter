@@ -41,7 +41,7 @@ up the command prompt) typing in (while in root directory of the code):
 mvn clean compile assembly:single
 ```
 
-The classes compiled thus may be ran without an argument (to use the sample
+The classes compiled thus may be ran without an argument (and use the sample
 text file provided):
 ```
 java WordCounter
