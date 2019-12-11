@@ -22,7 +22,7 @@ properly and thus I resorted to using a vertical bar chart. After implementing a
 I’m happy with that choice, as I think it provides a very good view of the data.
 
 If I had more time to work on the project I would most likely:
--	Try to get the word cloud visualization to work, mostly as a point of pride.
+-	Try to get the word cloud visualization to work, to provide another way of showing the data on the webpage.
 -	Get better acquainted with JavaScript to the point of perhaps implementing an input box on the website for accepting other lyrics and producing similar visualizations of the data.
 -	Improve on the admittedly bare-bones presentation of the webpage.
 
