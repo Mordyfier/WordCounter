@@ -1,15 +1,31 @@
+/******************************************************************************
+ *  Marcin Tomala | 23736198
+ *
+ *
+ *  Reads in a text file and counts each occurence of each word by placing them
+ *  in a HashMap<String, Integer>, where String is the Word and Integer is the Count.
+ *  The HashMap is then sorted and printed to a .txt file (for Cloud.java) and .csv file
+ *  (for Bars.java) used by the visualization classes.
+ *
+ ******************************************************************************/
+
+
+
 import java.util.*;
 import java.io.*;
 import java.util.List;
 
 public class WordCounter {
     public static void main(String[] args) throws Exception {
+        //optional argument for use with custom lyric file
         String filename = "sample.txt";
         if (args.length > 0) {
             filename = args[0];
         }
+
         Scanner scanner = new Scanner(new File(filename));
         BufferedWriter out = new BufferedWriter(new FileWriter("dataSet.txt"));
+        //The HashMap in which Words, Occurences will be organized
         HashMap<String, Integer> hm = counter(scanner);
         scanner.close();
 
@@ -17,6 +33,7 @@ public class WordCounter {
         writeToFile(hm, out);
         out.close();
     }
+    //method to read the text file into the HashMap to collect the data about the song
     public static HashMap<String, Integer> counter(Scanner scanner) {
         HashMap<String, Integer> hm = new HashMap<String, Integer>();
         String nextWord;
@@ -44,6 +61,7 @@ public class WordCounter {
         }
         return temp;
     }
+    //outputs text file in the format desired by the Kumo wordcloud library and .csv file for tablesaw for bar chart.
     public static void writeToFile(HashMap<String, Integer> hm, BufferedWriter out) throws Exception {
         for (String s : hm.keySet()) {
             System.out.println(hm.get(s) + ": " + s);

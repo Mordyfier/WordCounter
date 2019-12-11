@@ -1,9 +1,14 @@
+/******************************************************************************
+ *  Marcin Tomala | 23736198
+ *
+ *
+ *  Accepts a .csv file that is output by WordCounter.class and produces a vertical bar chart utilizing Plot.ly.
+ *
+ ******************************************************************************/
 
-import static tech.tablesaw.aggregate.AggregateFunctions.count;
 
 import tech.tablesaw.api.Table;
 import tech.tablesaw.plotly.Plot;
-import tech.tablesaw.plotly.api.ScatterPlot;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.components.Layout;
 import tech.tablesaw.plotly.traces.BarTrace;
@@ -23,10 +28,5 @@ public class Bars {
 
         Layout layout = Layout.builder().title(" \"All You Need Is Love\" \n Frequency of occurence per word").height(600).width(800).build();
         Plot.show(new Figure(layout, trace));
-
-        Layout layout2 = Layout.builder().title("Number of words as a function of frequency").build();
-        HistogramTrace trace2 = HistogramTrace.builder(table.nCol("Count")).build();
-
-        Plot.show(new Figure(layout2, trace2));
     }
 }
