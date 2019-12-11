@@ -18,7 +18,7 @@ only sorted by Keys, not Values, and therefore - since we’re dealing with song
 multiple words with the same count of occurrences and therefore the Integer cannot be used as a Key – it’s inadequate for our needs.
 
 I initially intended to utilize a word cloud visualization, but I was unable to get the word scaling to work 
-properly and thus I resorted to using a vertical bar chart. After implementing and producing the chart 
+properly and thus I resorted to using a vertical bar chart. After implementing the Class and producing the chart 
 I’m happy with that choice, as I think it provides a very good view of the data.
 
 If I had more time to work on the project I would most likely:
