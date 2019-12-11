@@ -10,7 +10,7 @@ Prof. Chuang
 
 The data structure I’ve used to calculate word frequencies was the HashMap. It seems to be a natural choice, 
 due to its <Key, Value> nature, allowing to store each word and its frequency seamlessly. Additionally, 
-the contains() and put() methods (used to, respectively, increment the count for words already present in 
+the containsKey() and put() methods (used to, respectively, increment the count for words already present in 
 the map and to place new words in the map) are both done in O(1), offering superb efficiency. The only drawback 
 of the HashMap is the fact that sorting by value requires a little more effort than in the case of Arrays and 
 other linear data structures. This would be an opportunity to utilize the TreeMap, but unfortunately TreeMap 
