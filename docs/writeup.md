@@ -30,5 +30,7 @@ I picked “All You Need is Love” by The Beatles mostly because I thought its 
 
 According to Wikipedia, the song was indeed at the top of Billboard Hot 100 for a week after its release in July 1967. 
 I couldn’t find any revenue data for this song, but evaluating the value of each word would be relatively simple. A counter could be implemented in the method that places each word of the text file into the HashMap, incrementing each time a word is read by the Scanner, providing the total number of words in the song. Then, for each word in the HashMap, the price of each word would be 
+```
 double wordRatio = count / numberOfAllWords;
 wordValue = wordRatio * totalSales;
+```
