@@ -27,8 +27,8 @@ If I had more time to work on the project I would most likely:
 -	Improve on the admittedly bare-bones presentation of the webpage.
 
 I picked “All You Need is Love” by The Beatles mostly because I thought its data chart would be more aesthetically pleasing. Since there are a few words repeated many times throughout the song, there would be more variance compared to a song that is comprised of many unique stanzas. Overall, I wasn’t very surprised by the data, as I expected ‘all’, ‘you’, ‘need’, ‘is’, and ‘love’ to firmly occupy the upper end of the scale. 
-According to Wikipedia, the song was indeed at the top of Billboard Hot 100 for a week after its release in July 1967. 
 
+According to Wikipedia, the song was indeed at the top of Billboard Hot 100 for a week after its release in July 1967. 
 I couldn’t find any revenue data for this song, but evaluating the value of each word would be relatively simple. A counter could be implemented in the method that places each word of the text file into the HashMap, incrementing each time a word is read by the Scanner, providing the total number of words in the song. Then, for each word in the HashMap, the price of each word would be 
 double wordRatio = count / numberOfAllWords;
 wordValue = wordRatio * totalSales;
