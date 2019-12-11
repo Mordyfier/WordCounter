@@ -27,8 +27,8 @@ grouped as follows, in order of frequency:
 The contents of the output file are also printed to the console, showing the
 user a preview of the dataset without having to open the .txt file.
 
-The output file is then accepted by the visualisation class Cloud.java which
-produces a wordcloud (output.png) of the words based on their appearance frequency.
+The output file is then accepted by the visualisation class Bars.java which
+produces a html file with the JavaScript code for the Plot.ly bar chart.
 
 ## Usage
 While the WordCounter class does not utilize Maven libraries(and therefore can be compiled standalone), 
@@ -51,10 +51,12 @@ or, if the user wishes to provide the application with their own file:
 java WordCounter <filename>.txt
 ```
 
-The WordCounter class will then produce an output file "dataSet.txt" in the 
-directory which will then be used by Cloud.class (ran as above, replacing
+The WordCounter class will then produce two output files in the directory: 
+- "dataSet.txt", which will then be used by Cloud.class (ran as above, replacing
 "WordCounter" with "Cloud"). The Cloud class will produce a .png file with
-the dataset visualised in a wordcloud.
+the dataset visualised in a wordcloud. 
+- "dataSet.csv", which will be used by Bars.class to produce a data chart (as JavaScript code embedded in a .html webpage)
+
 
 
 
@@ -62,4 +64,4 @@ the dataset visualised in a wordcloud.
 - The Beatles, as the lyrics used in the sample file come from their song
 ["All You Need is Love"](https://www.youtube.com/watch?v=_7xMfIp-irg)
 - For the purpose of visualisation, the [Kumo](https://github.com/kennycason/kumo)
-open source Maven library was used.
+open source Maven library was used for wordcloud, and [Tablesaw](https://github.com/jtablesaw/tablesaw) (and, by extension, [Plot.ly](https://github.com/plotly)) for bar chart.
