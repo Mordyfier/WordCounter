@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Marcin Tomala | 23736198
+ *  Marcin Tomala
  *
  *
  *  Accepts a .csv file that is output by WordCounter.class and produces a vertical bar chart utilizing Plot.ly.

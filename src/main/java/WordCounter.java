@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Marcin Tomala | 23736198
+ *  Marcin Tomala
  *
  *
  *  Reads in a text file and counts each occurence of each word by placing them
