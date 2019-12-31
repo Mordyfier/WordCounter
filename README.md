@@ -64,4 +64,4 @@ the dataset visualised in a wordcloud.
 - The Beatles, as the lyrics used in the sample file come from their song
 ["All You Need is Love"](https://www.youtube.com/watch?v=_7xMfIp-irg)
 - For the purpose of visualisation, the [Kumo](https://github.com/kennycason/kumo)
-open source Maven library was used for wordcloud, and [Tablesaw](https://github.com/jtablesaw/tablesaw) (and, by extension, [Plot.ly](https://github.com/plotly)) for bar chart.
+open source library was used for wordcloud, and [Tablesaw](https://github.com/jtablesaw/tablesaw) (and, by extension, [Plot.ly](https://github.com/plotly)) for bar chart.

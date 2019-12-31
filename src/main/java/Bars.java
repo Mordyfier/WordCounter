@@ -12,7 +12,7 @@ import tech.tablesaw.plotly.Plot;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.components.Layout;
 import tech.tablesaw.plotly.traces.BarTrace;
-import tech.tablesaw.plotly.traces.HistogramTrace;
+
 
 
 public class Bars {
